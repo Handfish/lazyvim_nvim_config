@@ -10,7 +10,7 @@ I definitely don't remember a full list but the non-obvious ones are:
 
 ```
 lazygit
-npm install -g pretty-ts-errors-markdown
+bun install -g pretty-ts-errors-markdown
 ```
 
 ### TODO
