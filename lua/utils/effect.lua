@@ -1,3 +1,15 @@
+--
+--
+-- TODO:
+--  This is sort of a big hack and an exploration into interacting
+--  with the LSP through an NVIM plugin - there's several different ways
+--  this could be better. If it's to stay an nvim plugin it should use
+--  "textDocument/typeDefinition" and register a code action
+--
+--  but really I should make a pull request to 
+--  https://github.com/Effect-TS/language-service with a proper action
+--
+
 local M = {}
 
 local DEBUG = false
