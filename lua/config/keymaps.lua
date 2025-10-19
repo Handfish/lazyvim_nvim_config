@@ -50,7 +50,8 @@ map("n", "<leader>3", "<cmd>exec '!git add' fnameescape(fnamemodify(finddir('.gi
 -- map("n", "<leader>k", "<cmd>lnext<CR>zz", { desc = "Next Location" })
 -- map("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Previous Location" })
 
-
+-- biome format
+map("n", "<leader>bf", ":!biome check --write %<CR>", { desc = "Biome fix" })
 
 -- Compatible with LazyVim's Trouble setup (v3)
 local trouble = require("trouble")

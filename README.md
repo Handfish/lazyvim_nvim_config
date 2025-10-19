@@ -80,6 +80,7 @@ These are the keymaps I have personally added or changed to fit my specific work
 | `<leader>gg`        | Normal | Lazygit   | Open Lazygit interface       |
 | `<leader>gs`        | Normal | Fugitive  | Open Fugitive status window  |
 | `<leader>u`         | Normal | Undotree  | Toggle Undotree window       |
+| `<leader>bf`        | Normal | Biome     | Format Biome                 |
 
 ---
 ---
