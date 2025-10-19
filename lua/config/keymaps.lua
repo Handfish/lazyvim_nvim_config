@@ -25,7 +25,10 @@ map("n", "Q", "<nop>")
 
 map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace Word Under Cursor" })
 map("n", "<leader>cx", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make Executable (chmod +x)" })
-map("n", "<leader>r", "<cmd>set paste!<CR>", { desc = "Toggle Paste Mode" })
+-- map("n", "<leader>r", "<cmd>set paste!<CR>", { desc = "Toggle Paste Mode" })
+map("n", "<leader>p", '"+p', { desc = "Paste from clipboard" })
+map("n", "<leader>P", '"+P', { desc = "Paste before cursor" })
+
 
 -- Buffer navigation
 map("n", "<C-j>", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })

@@ -27,7 +27,7 @@ These are the keymaps I have personally added or changed to fit my specific work
 
 | Keymap              | Mode          | Description                                           |
 | :------------------ | :------------ | :---------------------------------------------------- |
-| `<C-j>` / `<C-k>`   | Normal        | Navigate to **Previous** / **Next** Buffer              |
+| `<C-j>` / `<C-k>`   | Normal        | Navigate to **Previous** / **Next** Buffer            |
 | `<C-n>`             | Normal        | Navigate to the Last Active Buffer                    |
 | `<C-;>`             | Normal        | Close Current Buffer                                  |
 | `<leader><C-;>`     | Normal        | Force-Close Current Buffer                            |
@@ -35,7 +35,8 @@ These are the keymaps I have personally added or changed to fit my specific work
 | `<leader>y` / `Y`   | Normal/Visual | Yank to System Clipboard                              |
 | `<leader>d`         | Normal/Visual | Delete to Blackhole Register (doesn't overwrite yank) |
 | `<leader>s`         | Normal        | Replace word under cursor across the file             |
-| `<leader>r`         | Normal        | Toggle Paste Mode                                     |
+| `<leader>p`         | Normal        | Paste from clipboard w/o formatting                   |
+| `<leader>P`         | Normal        | Paste before cursor w/o formatting                    |
 | `<leader>cx`        | Normal        | Make File Executable (`chmod +x`)                     |
 | `<leader>bz`        | Normal        | Convert tabs to spaces w width 2                      |
 
@@ -46,7 +47,7 @@ These are the keymaps I have personally added or changed to fit my specific work
 | `<leader>q`         | Normal | **Toggle Diagnostics** (opens Trouble plugin)         |
 | `<leader>0`         | Normal | **Restart LSP** Servers                               |
 | `<leader>h`         | Normal | Toggle Inlay Hints                                    |
-| `<leader>ic`        | Normal | **Effect: Insert Cases** (custom Effect-TS snippet) |
+| `<leader>ic`        | Normal | **Effect: Insert Cases** (custom Effect-TS snippet)   |
 | `<leader>;`         | Normal | **Rust Code Action**                                  |
 
 ### Telescope
