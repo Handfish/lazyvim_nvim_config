@@ -15,8 +15,6 @@ bun install -g pretty-ts-errors-markdown
 
 ### TODO
 
-The `/after` folder may be deprecated at this point but early `.mdx` support with treesitter needed the `.scm` files. Will look into.
-
 Explore [copilot-lsp](https://github.com/copilotlsp-nvim/copilot-lsp) for NES.
 
 Use `mason-tool-installer.nvim` to ensure its packages are installed.
@@ -169,4 +167,14 @@ These are some of the most important default keymaps provided by LazyVim and the
     ◍ typescript-language-server ts_ls
     ◍ vtsls
     ◍ yaml-language-server yamlls
+```
+
+### Working with .mdx
+
+Create a `.markdownlint.json` in your project root.
+
+```json
+{
+  "MD033": false
+}
 ```
