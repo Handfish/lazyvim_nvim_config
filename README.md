@@ -19,6 +19,7 @@ The `/after` folder may be deprecated at this point but early `.mdx` support wit
 
 Explore [copilot-lsp](https://github.com/copilotlsp-nvim/copilot-lsp) for NES.
 
+Use `mason-tool-installer.nvim` to ensure its packages are installed.
 
 ## My Custom Keymaps
 
@@ -131,3 +132,41 @@ These are some of the most important default keymaps provided by LazyVim and the
 | `<leader>di`        | Normal | Step Into function                  |
 | `<leader>do`        | Normal | Step Out of function                |
 | `<leader>dO`        | Normal | Step Over line                      |
+
+
+### Mason Installs
+
+```
+  Installed
+    ◍ biome
+    ◍ codelldb
+    ◍ css-lsp cssls
+    ◍ delve
+    ◍ docker-compose-language-service docker_compose_language_service
+    ◍ dockerfile-language-server dockerls
+    ◍ emmet-language-server emmet_language_server
+    ◍ eslint_d
+    ◍ gofumpt
+    ◍ goimports
+    ◍ gopls
+    ◍ hadolint
+    ◍ helm-ls helm_ls
+    ◍ js-debug-adapter
+    ◍ json-lsp jsonls
+    ◍ lua-language-server lua_ls
+    ◍ markdown-toc
+    ◍ markdownlint-cli2
+    ◍ marksman
+    ◍ mdx-analyzer mdx_analyzer
+    ◍ prettier
+    ◍ rust-analyzer rust_analyzer
+    ◍ shfmt
+    ◍ solidity-ls solidity
+    ◍ stylua
+    ◍ tailwindcss-language-server tailwindcss
+    ◍ taplo
+    ◍ tree-sitter-cli
+    ◍ typescript-language-server ts_ls
+    ◍ vtsls
+    ◍ yaml-language-server yamlls
+```
