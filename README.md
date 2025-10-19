@@ -4,9 +4,21 @@ This configuration is built on the [LazyVim](https://www.lazyvim.org/) starter t
 
 ---
 
+## Requirements
+
+I definitely don't remember a full list but the non-obvious ones are:
+
+```
+lazygit
+npm install -g pretty-ts-errors-markdown
+```
+
 ### TODO
 
 The `/after` folder may be deprecated at this point but early `.mdx` support with treesitter needed the `.scm` files. Will look into.
+
+Explore [copilot-lsp](https://github.com/copilotlsp-nvim/copilot-lsp) for NES.
+
 
 ## My Custom Keymaps
 
