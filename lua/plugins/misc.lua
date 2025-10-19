@@ -12,10 +12,36 @@ return {
   { "JoosepAlviste/nvim-ts-context-commentstring", event = "VeryLazy" },
 
   -- Highlight colors like #FFFFFF
-  { "brenoprata10/nvim-highlight-colors", event = "VeryLazy" },
+  {
+    "brenoprata10/nvim-highlight-colors",
+    event = "BufRead",
+    config = function()
+      require("nvim-highlight-colors").setup({
+        ---Render style
+        ---@usage 'background'|'foreground'|'virtual'
+        render = 'background',
 
-  -- Emmet for HTML/CSS
-  { "mattn/emmet-vim", ft = { "html", "css", "typescriptreact", "javascriptreact" } },
+        ---Set virtual symbol (requires render to be set to 'virtual')
+        virtual_symbol = '■',
+
+        virtual_symbol_position = 'inline',
+
+        ---Highlight named colors, e.g. 'green'
+        enable_named_colors = true,
+
+        ---Highlight tailwind colors, e.g. 'bg-blue-500'
+        enable_tailwind = true,
+
+        ---Set custom colors
+        ---Label must be properly escaped with '%' to adhere to `string.gmatch`
+        --- :help string.gmatch
+        custom_colors = {
+          { label = '%-%-theme%-primary%-color', color = '#0f1219' },
+          { label = '%-%-theme%-secondary%-color', color = '#5a5d64' },
+        }
+      })
+    end,
+  },
 
   -- Manage Git conflicts
   { "akinsho/git-conflict.nvim", version = "*", config = true },
