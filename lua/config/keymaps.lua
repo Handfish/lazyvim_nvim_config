@@ -53,6 +53,15 @@ map("n", "<leader>3", "<cmd>exec '!git add' fnameescape(fnamemodify(finddir('.gi
 -- biome format
 map("n", "<leader>bf", ":!biome check --write %<CR>", { desc = "Biome fix" })
 
+map("n", "<leader>bz", function()
+  vim.bo.tabstop = 2
+  vim.bo.shiftwidth = 2
+  vim.bo.softtabstop = 2
+  vim.bo.expandtab = true
+  vim.cmd("retab")
+  print("Converted to 2-space tabs")
+end, { desc = "Convert buffer to 2-space tabs" })
+
 -- Compatible with LazyVim's Trouble setup (v3)
 local trouble = require("trouble")
 

@@ -37,6 +37,7 @@ These are the keymaps I have personally added or changed to fit my specific work
 | `<leader>s`         | Normal        | Replace word under cursor across the file             |
 | `<leader>r`         | Normal        | Toggle Paste Mode                                     |
 | `<leader>cx`        | Normal        | Make File Executable (`chmod +x`)                     |
+| `<leader>bz`        | Normal        | Convert tabs to spaces w width 2                      |
 
 ### LSP & Diagnostics
 
