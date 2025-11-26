@@ -10,8 +10,10 @@ map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move Line Down" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move Line Up" })
 
 map("n", "J", "mzJ`z")
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
+
+--map("n", "<C-d>", "<C-d>zz")
+--map("n", "<C-u>", "<C-u>zz")
+
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
@@ -100,3 +102,14 @@ end, { desc = "Find Git Files" })
 vim.keymap.del("n", "<leader>qq")
 
 map("n", "<leader>q!", "<cmd>qa<cr>", { desc = "Quit All" })
+
+
+map("n", "<leader>9", function()
+  for _, win in ipairs(vim.api.nvim_list_wins()) do
+    local cfg = vim.api.nvim_win_get_config(win)
+    if cfg.relative ~= "" then  -- it's a floating window
+      vim.api.nvim_win_close(win, true)
+    end
+  end
+end, { desc = "Close all floating windows" })
+
