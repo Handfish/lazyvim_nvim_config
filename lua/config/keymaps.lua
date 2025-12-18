@@ -113,3 +113,15 @@ map("n", "<leader>9", function()
   end
 end, { desc = "Close all floating windows" })
 
+-- Neovide font scaling (Command + / Command -)
+if vim.g.neovide then
+  vim.g.neovide_scale_factor = 1.0
+
+  local function change_scale_factor(delta)
+    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+  end
+
+  map("n", "<D-=>", function() change_scale_factor(1.1) end, { desc = "Increase font size" })
+  map("n", "<D-->", function() change_scale_factor(1/1.1) end, { desc = "Decrease font size" })
+  map("n", "<D-0>", function() vim.g.neovide_scale_factor = 1.0 end, { desc = "Reset font size" })
+end
